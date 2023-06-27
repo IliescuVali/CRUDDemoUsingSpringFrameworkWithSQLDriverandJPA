@@ -23,7 +23,7 @@ public class CruddemoApplication {
 
 			//createStudent(studentDAO);
 
-			//CreateMultipleStudents(studentDAO);
+			CreateMultipleStudents(studentDAO);
 			
 //			readStudent(studentDAO);
 //			queryForStudent(studentDAO);
@@ -34,7 +34,8 @@ public class CruddemoApplication {
 
 			//deleteStudent(studentDAO);
 
-			deleteAllStudents(studentDAO);
+			//deleteAllStudents(studentDAO);
+
 
 		};
 	}
@@ -112,23 +113,23 @@ public class CruddemoApplication {
 
 	private void CreateMultipleStudents(StudentDAO studentDAO) {
 		//create multiple students
-//	System.out.println( "Creating new students objects...");
-//	Student tempstudent1= new Student("Magda", "Iliescu", "magda@gmail.com");
-//
-//	Student tempstudent2= new Student("Valentin", "Radu", "valentin8@gmail.com");
-//
-//	Student tempstudent3= new Student("Andreea", "Radu", "andreea8@gmail.com");
-//
-//	Student tempstudent4= new Student("David", "Radu", "David@gmail.com");
-////		//save the student objects
-//	System.out.println("Saving the students....");
-//	studentDAO.save(tempstudent1);
-////
-//	studentDAO.save(tempstudent2);
-////
-//	studentDAO.save(tempstudent3);
-////
-//	studentDAO.save(tempstudent4);
+	System.out.println( "Creating new students objects...");
+	Student tempstudent1= new Student("Magda", "Iliescu", "magda@gmail.com");
+
+	Student tempstudent2= new Student("Valentin", "Radu", "valentin8@gmail.com");
+
+	Student tempstudent3= new Student("Andreea", "Radu", "andreea8@gmail.com");
+
+	Student tempstudent4= new Student("David", "Radu", "David@gmail.com");
+	//save the student objects
+	System.out.println("Saving the students....");
+	studentDAO.save(tempstudent1);
+
+	studentDAO.save(tempstudent2);
+
+	studentDAO.save(tempstudent3);
+
+	studentDAO.save(tempstudent4);
 	}
 
 	private void createStudent(StudentDAO studentDAO) {
